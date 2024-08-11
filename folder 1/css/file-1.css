@@ -1,0 +1,167 @@
+body {
+  font-family: 'Avenir', 'Montserrat', sans-serif;
+  line-height: 25px;
+  color: rgb(92, 88, 88);
+  background-color: rgba(247, 194, 202, 0.267);
+ 
+ 
+}
+
+.parent {
+  background-color: white;
+  border-radius: 10px
+  
+}
+
+img {
+  border-radius: 5px;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.div-2 {
+  background-color: rgba(252, 212, 218, 0.267);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.p-2 {
+  color: rgb(119, 16, 16);
+  font-weight: 700;
+}
+
+h2 {
+  color: rgb(119, 16, 16);
+}
+
+ol li::marker {
+  color: rgb(119, 16, 16);
+  font-weight: 600;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  position: relative;
+}
+
+th:after, td:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(151, 146, 146);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+tr:last-child th:after, tr:last-child td:after {
+  display: none;
+}
+
+span {
+  color: rgb(119, 16, 16);
+  font-weight: 600;
+}
+
+hr {
+  margin: 0 20px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: white;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .parent {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 10px 10px;
+    margin-top: 0;
+  }
+
+  img {
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  br {
+    display: none;
+  }
+  h1 {
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .parent {
+    max-width: 70%;
+    margin: 10%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .parent {
+    max-width: 60%;
+    margin: 10% 20%;
+    padding: 15px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .parent {
+    max-width: 50%;
+    margin: 5% auto;
+    padding: 20px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .parent {
+    max-width: 40%;
+    margin: 5% auto;
+    padding: 20px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}

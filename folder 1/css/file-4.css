@@ -1,0 +1,116 @@
+
+    .p-1 {
+      font-family: 'Avenir', 'Montserrat', sans-serif;
+      letter-spacing: 4px;
+      color: rgb(129, 127, 127);
+      font-weight: 550;
+    }
+
+    .div-description {
+      margin: 20px;
+    }
+
+    h1 {
+      font-family: "Platypi", serif;
+    }
+
+    h1 + p {
+      color: rgb(129, 127, 127);
+      font-family: "Roboto", sans-serif;
+      word-spacing: 3px;
+      line-height: 25px;
+      font-weight: 540;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+    }
+
+    .span-1 {
+      color: rgb(35, 124, 90);
+      font-size: 40px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 900;
+    }
+
+    .span-2 {
+      margin-left: 30px;
+      color: rgb(129, 127, 127);
+      font-size: 18px;
+      text-decoration: line-through;
+    }
+
+    button {
+      width: 95%;
+      margin: auto;
+      padding: 15px;
+      background-color: rgb(35, 124, 90);
+      border: none;
+      color: white;
+      font-weight: 900;
+      font-size: 13px;
+      border-radius: 10px;
+    }
+
+    @media (min-width: 320px) and (max-width: 600px) {
+      img {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .parent {
+        background-color: white;
+        max-width: 100vw;
+        margin: 15px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+      }
+
+      body {
+        background-color: rgba(240, 223, 226, 0.815);
+        padding: 15px 0px;
+        overflow: scroll;
+      }
+    }
+
+    @media (min-width: 601px) {
+      .parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        margin: 20vh auto;
+        max-width: 1200px;
+        border-radius: 10px;
+      }
+
+      .div-description {
+        flex: 1;
+        padding: 20px;
+      }
+
+      img {
+        height: 100vh;
+        max-height: 500px;
+        flex: 1;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(240, 223, 226, 0.815);
+      }
+
+      button {
+        width: auto;
+        padding: 15px 30px;
+      }
+    }
+ @media
